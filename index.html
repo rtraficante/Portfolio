@@ -566,7 +566,12 @@
                 <div class="content-box animated">
                   <h4>Write a message:</h4>
                   <div class="contact-form">
-                    <form id="cform" method="post">
+                    <form
+                      id="cform"
+                      name="contact"
+                      method="post"
+                      data-netlify="true"
+                    >
                       <div class="group-val">
                         <input
                           type="text"
@@ -594,12 +599,9 @@
                           placeholder="Message"
                         ></textarea>
                       </div>
-                      <a
-                        href="#"
-                        class="btn btn_animated"
-                        onclick="$('#cform').submit(); return false;"
-                        ><span class="circle">Send Message</span></a
-                      >
+                      <button type="submit" class="btn btn_animated">
+                        <span class="circle">Send Message</span>
+                      </button>
                     </form>
                     <div class="alert-success">
                       <p>
